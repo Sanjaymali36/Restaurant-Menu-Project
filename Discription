@@ -7,8 +7,8 @@ an ideal application for any size restaurant wishing to display their menu on a 
 
 Restaurant-Menu-APP  focuses on the following 2 main concepts:
 
-    Menu Categories (Breakfast,Cool drinks, Icecream)
-    Menu Items (i.e. poori, pepsi,vanila)
+    1. Menu Categories (Breakfast,Cool drinks, Icecream)
+    2. Menu Items (i.e. poori, pepsi,vanila)
 
 Each menu item can belong to multiple categories to facilitate items occurring in multiple locations throughout
 the Restaurant. is a restaurant application and has been developed to meet the needs of a simple restaurant. 
