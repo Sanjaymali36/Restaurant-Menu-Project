@@ -19,7 +19,7 @@ from MenuItem import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^c.*', views.CreateData),
-    url(r'^disp.*', views.DisplayMenu),
+    url(r'^disp.*', views.DisplayMenu,name='display'),
     url(r'^Del.*', views.DeleteMenuWithItems),
     url(r'^rem.*', views.RemoveMenuWithItems)
 ]
