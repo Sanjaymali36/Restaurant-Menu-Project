@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Menu, Items
 
 def CreateData(request):
@@ -33,7 +33,8 @@ def DisplayMenu(request):
 def DeleteMenuWithItems(request):
     return render(request,'delete.html')
 def RemoveMenuWithItems(request):
-    menu_name = request.POST['t1']
-    Menu.objects.get(name = menu_name).delete()
-    return render(request,'home.html')
+    if request.method == 'POST':
+        menu_name = request.POST['t1']
+        removed_item = Menu.objects.filter(name=menu_name).delete()
+        return redirect('display')
 
