@@ -45,8 +45,8 @@ def DeleteMenuWithItems(request):
     return render(request, 'delete.html')
 def RemoveMenuWithItems(request):
     if request.method == 'POST':
-    menu_name = request.POST['t1']
-    removed_item = Menu.objects.filter(name=menu_name).delete()
-    return redirect('display')
-    #print(request.post)
+        menu_name = request.POST['t1']
+        removed_item = Menu.objects.filter(name=menu_name).delete()
+        return redirect('display')
+        #print(request.post)
 
