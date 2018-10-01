@@ -1,0 +1,13 @@
+<body>
+<table>
+
+  {%for rec in records%}
+      {{ rec.name }}
+  <ul>
+  {% for i in rec.items_set.all %}
+   <li>  {{i.name}} ,{{i.Price}}</li>
+   {% endfor %}
+   </ul>
+   {% endfor %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+<body>
+<form action = '/remove/' method ='POST'>
+
+{% csrf_token %}
+EnterMenuName:<input type="text", name="t1"/>
+<br/>
+<input type = 'submit' value ='DeleteMenuWithItems'/>
+</form>
+</body>
+</html>
